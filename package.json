@@ -1,5 +1,5 @@
 {
-  "name": "pull-stream",
+  "name": "@jacobbubu/pull-stream",
   "description": "minimal pull stream",
   "version": "3.6.14",
   "homepage": "https://pull-stream.github.io",
@@ -7,6 +7,7 @@
     "type": "git",
     "url": "git://github.com/pull-stream/pull-stream.git"
   },
+  "types": "./types/index.d.ts",
   "devDependencies": {
     "fastbench": "^1.0.1",
     "pull-abortable": "~2.0.0",
@@ -16,5 +17,8 @@
     "test": "set -e; for t in test/*.js; do node $t; done"
   },
   "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
